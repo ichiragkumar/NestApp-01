@@ -3,8 +3,10 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class TodoService {
 
-    
-    createTodo():string {
-        return "todo created";
+
+    createTodo():object {
+        return {
+            msg:"todo created successfully"
+        }
       }
 }
